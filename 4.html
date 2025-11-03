@@ -381,6 +381,10 @@
             .progress-fill.animate {
                 width: var(--progress-width);
             }
+
+            .title{
+                @apply text-3xl lg:text-4xl text-gray-900 mb-4;
+            }
         </style>
     </head>
     <body>
@@ -389,10 +393,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center py-4">
                     <div class="flex items-center">
-                        <div class="text-2xl" style="color: var(--primary)">
-                            <span style="color: var(--primary)">ONE</span>
-                            <span class="text-blue-600 ml-2">PAY</span>
-                        </div>
+                        <img src="./images/logo.png" alt="" class="w-[80px]">
                     </div>
 
                     <!-- Desktop Navigation -->
@@ -531,9 +532,10 @@
         <!-- Main Content -->
         <main>
             <!-- Hero Section -->
+            <!-- bg-gradient-to-r from-blue-50 to-blue-100 -->
             <section
                 id="home"
-                class="bg-gradient-to-r from-blue-50 to-blue-100 py-20"
+                class="  py-20"
             >
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div
@@ -556,7 +558,7 @@
                                     class="btn-primary btn-lg"
                                     onclick="openModal()"
                                 >
-                                    Начать бесплатно
+                                    Подключить
                                 </button>
                                 <button
                                     class="btn-outline btn-lg"
@@ -626,9 +628,9 @@
 
                         <div class="lg:text-center">
                             <img
-                                src="./images/main-bg.png"
+                                src="./images/onepay-func.png"
                                 alt="PayStream Pro платежная панель"
-                                class="rounded-lg shadow-xl w-full h-auto"
+                                class="w-full h-auto"
                             />
                         </div>
                     </div>
@@ -661,7 +663,7 @@
                     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
                 >
                     <div class="text-center mb-16">
-                        <h2 class="text-3xl lg:text-4xl text-gray-900 mb-4">
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-6">
                             Впечатляющие результаты наших клиентов
                         </h2>
                         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -679,7 +681,7 @@
                                 class="text-4xl font-bold text-blue-600 mb-2"
                                 id="counter1"
                             >
-                                $0
+                                $5M
                             </div>
                             <div class="text-gray-600">
                                 Обработано транзакций
@@ -716,13 +718,11 @@
                 </div>
             </section>
 
-             
-
             <!-- Services Section -->
             <section id="services" class="py-20 bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16">
-                        <h2 class="text-3xl lg:text-4xl text-gray-900 mb-4">
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-4">
                             Наши платежные решения
                         </h2>
                         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -1415,24 +1415,93 @@
                 </div>
             </section>
 
+            <section id="onepay" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- Header -->
+                    <div class="text-center mb-20">
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-4">
+                            ONEPAY
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Гибкость, Скорость, Надежность
+                        </p>
+                    </div>
+    
+                    <!-- Features Grid -->
+                    <div class="grid md:grid-cols-3 gap-12 lg:gap-16">
+                        <!-- Гибкие модели -->
+                        <div class="group">
+                            <div class="mb-8 flex justify-center">
+                                <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center transition-colors hover:bg-blue-100">
+                                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl text-gray-900 mb-4 text-center">
+                                Гибкие модели развертывания
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed text-center">
+                                <span class="text-gray-900">On-Premise или SaaS? Выбор за вами!</span> Разверните наше White-Label решение в облаке (SaaS) или установите его на вашей инфраструктуре (On-Premise) для максимального контроля и соответствия внутренним требованиям безопасности.
+                            </p>
+                        </div>
+    
+                        <!-- Сверхбыстрый запуск -->
+                        <div class="group">
+                            <div class="mb-8 flex justify-center">
+                                <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center transition-colors hover:bg-blue-100">
+                                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl text-gray-900 mb-4 text-center">
+                                Сверхбыстрый запуск
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed text-center">
+                                <span class="text-gray-900">Готовность от 3 дней!</span> Наша White-Label платформа полностью готова к работе. Благодаря стандартизированному API и подготовленному веб-интерфейсу, мы обеспечиваем запуск вашей платежной системы в течение 3 дней с момента заключения договора. Сосредоточьтесь на бизнесе, а не на долгой интеграции.
+                            </p>
+                        </div>
+    
+                        <!-- Круглосуточная поддержка -->
+                        <div class="group">
+                            <div class="mb-8 flex justify-center">
+                                <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center transition-colors hover:bg-blue-100">
+                                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl text-gray-900 mb-4 text-center">
+                                Круглосуточная поддержка
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed text-center">
+                                <span class="text-gray-900">Поддержка 24/7/365.</span> Наша техническая команда и персональные менеджеры всегда на связи. Мы гарантируем оперативное решение любых вопросов, связанных с эксплуатацией, безопасностью и масштабированием, чтобы ваш платежный бизнес работал без сбоев.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <!-- Divider Line -->
+                    <div class="mt-20 border-t border-gray-200"></div>
+                </div>
+            </section>
+
             <section id="arm" class="py-20 bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <!-- Header -->
                     <div class="text-center mb-16">
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-6">
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-4">
                             Автоматизированное Рабочее Место (АРМ)
                         </h2>
                         <p class="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                            Единое рабочее пространство, которое трансформирует ваше взаимодействие с платежной системой, 
-                            превращая рутинные операции в полностью управляемый и прозрачный процесс. Это ваш персональный 
-                            центр управления, где собраны все инструменты для эффективной работы.
+                            АРМ -  это рабочее пространства для эффективного управления и контроля
                         </p>
                     </div>
     
                     <!-- Features Grid -->
                     <div class="grid md:grid-cols-2 gap-8">
                         <!-- Ролевые Модели -->
-                        <div class="bg-gradient-to-br to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-blue-100">
+                        <div class="bg-gradient-to-br to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border">
                             <div class="flex items-start gap-4 mb-6">
                                 <div class="flex-shrink-0 w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center">
                                     <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1464,7 +1533,7 @@
                         </div>
     
                         <!-- Прозрачное Управление -->
-                        <div class="bg-gradient-to-br  to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-purple-100">
+                        <div class="bg-gradient-to-br  to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border">
                             <div class="flex items-start gap-4 mb-6">
                                 <div class="flex-shrink-0 w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center">
                                     <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1495,7 +1564,7 @@
                         </div>
     
                         <!-- Лимиты и Антифрод -->
-                        <div class="bg-gradient-to-br  to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-green-100">
+                        <div class="bg-gradient-to-br  to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border">
                             <div class="flex items-start gap-4 mb-6">
                                 <div class="flex-shrink-0 w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center">
                                     <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1526,7 +1595,7 @@
                         </div>
     
                         <!-- Аналитика -->
-                        <div class="bg-gradient-to-br to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-orange-100">
+                        <div class="bg-gradient-to-br to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border">
                             <div class="flex items-start gap-4 mb-6">
                                 <div class="flex-shrink-0 w-14 h-14 bg-orange-600 rounded-xl flex items-center justify-center">
                                     <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1558,7 +1627,7 @@
                         </div>
     
                         <!-- Управление Ошибками - Full Width -->
-                        <div class="md:col-span-2 bg-gradient-to-br to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-red-100">
+                        <div class="md:col-span-2 bg-gradient-to-br to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border">
                             <div class="flex items-start gap-4 mb-6">
                                 <div class="flex-shrink-0 w-14 h-14 bg-red-600 rounded-xl flex items-center justify-center">
                                     <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1583,15 +1652,14 @@
                     </div>
                 </div>
             </section>
-
-            <!-- About Section -->
+             
             <section id="about" class="py-20 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div
                         class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
                     >
                         <div>
-                            <h2 class="text-3xl lg:text-4xl text-gray-900 mb-6">
+                            <h2 class="text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-6">
                                 О ONEPAY
                             </h2>
                             <p class="text-lg text-gray-600 mb-6">
@@ -1691,275 +1759,120 @@
                 </div>
             </section>
 
+             
+
             <section id="blog" class="py-20 bg-white">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-4">
+                        Посты
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        Текст
+                    </p>
+                </div> -->
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
                     <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
-                        <!-- Header -->
                         <div class="mb-8">
                             <h2 class="text-3xl lg:text-4xl text-gray-900 mb-4">
                                 Как с нуля построить команду для создания финтех-продукта
                             </h2>
-                            <!-- <div class="flex items-center gap-6 text-gray-600">
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
-                                    </svg>
-                                    <span>19</span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                                    </svg>
-                                    <span>10</span>
-                                </div>
-                            </div> -->
                         </div>
     
-                        <!-- Content -->
-                        <div class="prose prose-lg max-w-none">
-                            <p class="text-gray-700 mb-6">
-                                В начале 2022 года ТОО OneVision представляло собой платёжную организацию с лицензиями Национального Банка РК на эквайринг банковских карт и выпуск электронных денег.
-                            </p>
-                            
-                            <p class="text-gray-700 mb-6">
-                                Инфраструктура компании работала на стороннем вендорском решении, а технический отдел состоял всего из двух начинающих разработчиков на PHP.
-                            </p>
-                            
-                            <p class="text-gray-700 mb-6">
-                                DevOps-контур, аналитика, системное администрирование, тестирование и продуктовые процессы отсутствовали.
-                            </p>
-                            
-                            <p class="text-gray-700 mb-8">
-                                На этом этапе было принято стратегическое решение — создать собственную технологическую платформу для онлайн-платежей и электронных денег.
-                                Так началась разработка OnePay, которая всего за год превратилась в основу нового технологического направления холдинга и отдельную продуктовую компанию — OVTech Limited.
-                            </p>
-    
-                            <!-- Section 1 -->
-                            <div class="mb-8">
-                                <div class="flex items-start gap-3 mb-4">
-                                    <span class="text-2xl">1️⃣</span>
-                                    <h3 class="text-2xl text-gray-900 mt-1">Архитектура прежде всего</h3>
+                            <div class="prose prose-lg max-w-none">
+                                <div class="sm:flex gap-2">
+                                    <div>
+                                        <p class="text-gray-700 mb-6">
+                                            В начале 2022 года ТОО OneVision представляло собой платёжную организацию с лицензиями Национального Банка РК на эквайринг банковских карт и выпуск электронных денег.
+                                        </p>
+                                        
+                                        <p class="text-gray-700 mb-6">
+                                            Инфраструктура компании работала на стороннем вендорском решении, а технический отдел состоял всего из двух начинающих разработчиков на PHP.
+                                        </p>
+                                        
+                                        <p class="text-gray-700 mb-6">
+                                            DevOps-контур, аналитика, системное администрирование, тестирование и продуктовые процессы отсутствовали.
+                                        </p>
+                                        
+                                        <p class="text-gray-700 mb-8">
+                                            На этом этапе было принято стратегическое решение — создать собственную технологическую платформу для онлайн-платежей и электронных денег.
+                                            Так началась разработка OnePay, которая всего за год превратилась в основу нового технологического направления холдинга и отдельную продуктовую компанию — OVTech Limited.
+                                        </p>
+                                    </div>
+
+                                    <div class="sm:max-w-[50%]">
+                                        <img
+                                            src="https://astanahub.com/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2025-10-21_%D0%B2_16.50.47.png"
+                                            alt="Команда финтех-продукта"
+                                            class="w-full h-full object-contain"
+                                        />
+                                    </div>
                                 </div>
-                                
-                                <p class="text-gray-700 mb-4">
-                                    Разработка началась не с кода, а с проектирования архитектуры.
-                                    Для финтеха это критически важно: ошибка в логике обработки транзакций или очередей может привести к финансовым потерям.
-                                </p>
-                                
-                                <p class="text-gray-700 mb-3">Основные принципы, заложенные с самого начала:</p>
-                                <ul class="list-disc pl-6 mb-4 space-y-2 text-gray-700">
-                                    <li>Микросервисная архитектура — гибкость и масштабируемость.</li>
-                                    <li>Разделение транзакционного и аналитического контуров — PostgreSQL (OLTP) и ClickHouse (OLAP).</li>
-                                    <li>Событийная синхронизация через Kafka и Debezium для надёжной репликации данных.</li>
-                                    <li>Информационная безопасность по PCI DSS 4.0 — с самого начала, а не "потом".</li>
-                                    <li>Наблюдаемость и логирование через централизованные дашборды Grafana и Power BI.</li>
-                                </ul>
-                                
-                                <p class="text-gray-700">
-                                    Эта архитектура стала не просто техническим решением, а базой для всей инженерной культуры.
-                                </p>
-                            </div>
     
-                            <!-- Section 2 -->
-                            <div class="mb-8">
-                                <div class="flex items-start gap-3 mb-4">
-                                    <span class="text-2xl">2️⃣</span>
-                                    <h3 class="text-2xl text-gray-900 mt-1">Формирование команды и структуры</h3>
+                                <div class="mt-8 pt-6 border-t border-gray-200">
+                                    <a href="https://astanahub.com/ru/blog/kak-s-nulia-postroit-komandu-dlia-sozdaniia-fintekh-produkta" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer" 
+                                       class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
+                                        <span>Читать полную статью</span>
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                    </a>
                                 </div>
-                                
-                                <p class="text-gray-700 mb-4">
-                                    Параллельно с архитектурой формировался Департамент информационных технологий (ДИТ).
-                                    Идея заключалась не в найме отдельных программистов, а в создании целостной структуры, способной покрыть весь цикл — от проектирования до сопровождения.
-                                </p>
-                                
-                                <p class="text-gray-700 mb-3">Появились ключевые роли:</p>
-                                <ul class="list-disc pl-6 mb-4 space-y-2 text-gray-700">
-                                    <li>Backend-разработчики на Go — ядро транзакционной логики.</li>
-                                    <li>DevOps-инженеры — CI/CD, инфраструктура, отказоустойчивость.</li>
-                                    <li>Frontend-разработчики — интерфейсы клиентов и админ-порталы.</li>
-                                    <li>Системные аналитики и архитекторы — перевод бизнес-процессов в технические схемы.</li>
-                                    <li>Help Desk и служба поддержки — 24/7-операции и SLA.</li>
-                                    <li>QA-инженеры и автоматизаторы — гарантия стабильности релизов.</li>
-                                </ul>
-                                
-                                <p class="text-gray-700">
-                                    Так постепенно выросла команда, где каждый понимал свою роль в обеспечении жизненного цикла платежа.
-                                </p>
                             </div>
-    
-                            <!-- Section 3 -->
-                            <div class="mb-8">
-                                <div class="flex items-start gap-3 mb-4">
-                                    <span class="text-2xl">3️⃣</span>
-                                    <h3 class="text-2xl text-gray-900 mt-1">OnePay как сервис, а не проект</h3>
-                                </div>
-                                
-                                <p class="text-gray-700 mb-4">
-                                    С самого начала команда отказалась от восприятия OnePay как "проекта с дедлайном".
-                                    Это продукт-сервис, который должен постоянно развиваться, оставаться стабильным и безопасным.
-                                </p>
-                                
-                                <p class="text-gray-700 mb-3">Так была заложена модель SaaS / White Label:</p>
-                                <ul class="list-disc pl-6 mb-4 space-y-2 text-gray-700">
-                                    <li>один технологический стэк для десятков клиентов — платёжных организаций и банков;</li>
-                                    <li>кастомизация без форков — через параметры и шаблоны;</li>
-                                    <li>централизованные обновления, контроль качества и мониторинг.</li>
-                                </ul>
-                                
-                                <p class="text-gray-700">
-                                    Эта модель позволила удерживать баланс между индивидуальными потребностями клиентов и стабильностью платформы.
-                                </p>
-                            </div>
-    
-                            <!-- Section 4 -->
-                            <div class="mb-8">
-                                <div class="flex items-start gap-3 mb-4">
-                                    <span class="text-2xl">4️⃣</span>
-                                    <h3 class="text-2xl text-gray-900 mt-1">Опыт, который пришёл через ошибки</h3>
-                                </div>
-                                
-                                <p class="text-gray-700 mb-4">
-                                    Путь не был безупречным.
-                                </p>
-                                
-                                <p class="text-gray-700 mb-4">
-                                    В 2023 году команда пережила три крупных инцидента в продакшне, часть из которых сопровождалась финансовыми потерями.
-                                    Эти ситуации стали испытанием — и для инфраструктуры, и для команды.
-                                </p>
-                                
-                                <p class="text-gray-700 mb-4">
-                                    Каждый инцидент разбирался постфактум, документировался и приводил к конкретным изменениям:
-                                    улучшению архитектуры, введению двойных контрольных слоёв в обработке данных, пересмотру SLA и политик релизов.
-                                </p>
-                                
-                                <p class="text-gray-700">
-                                    В результате сформировалась устойчивая культура пост-инцидентного анализа без поиска виновных — только с целью понять и не повторить.
-                                </p>
-                            </div>
-    
-                            <!-- Section 5 -->
-                            <div class="mb-8">
-                                <div class="flex items-start gap-3 mb-4">
-                                    <span class="text-2xl">5️⃣</span>
-                                    <h3 class="text-2xl text-gray-900 mt-1">Безопасность и зрелость как часть ДНК</h3>
-                                </div>
-                                
-                                <p class="text-gray-700 mb-4">
-                                    Одновременно с техническим развитием шёл процесс сертификации PCI DSS v4.0.
-                                </p>
-                                
-                                <p class="text-gray-700">
-                                    Это стало внутренним стандартом инженерной дисциплины.
-                                    Безопасность, отказоустойчивость и прозрачность стали не отдельными задачами, а встроенными принципами всей разработки.
-                                </p>
-                            </div>
-    
-                            <!-- Section 6 -->
-                            <div class="mb-8">
-                                <div class="flex items-start gap-3 mb-4">
-                                    <span class="text-2xl">6️⃣</span>
-                                    <h3 class="text-2xl text-gray-900 mt-1">Результат: команда, продукт, экосистема</h3>
-                                </div>
-                                
-                                <p class="text-gray-700 mb-3">К 2024 году ДИТ представлял собой полноценную инженерную экосистему с:</p>
-                                <ul class="list-disc pl-6 mb-4 space-y-2 text-gray-700">
-                                    <li>автоматизированным CI/CD и релизным циклом;</li>
-                                    <li>архитектурным комитетом;</li>
-                                    <li>чёткими SLA по инцидентам;</li>
-                                    <li>системами наблюдаемости и аналитики (Grafana, Power BI);</li>
-                                    <li>независимой QA-верификацией всех релизов.</li>
-                                </ul>
-                                
-                                <p class="text-gray-700">
-                                    OnePay прошёл путь от стартап-платформы до зрелого финтех-продукта, который сегодня обслуживает клиентов в Казахстане, Узбекистане, Кыргызстане, Азербайджане и Таджикистане.
-                                </p>
-                            </div>
-    
-                            <!-- Read More Link -->
-                            <div class="mt-8 pt-6 border-t border-gray-200">
-                                <a href="https://astanahub.com/ru/blog/kak-s-nulia-postroit-komandu-dlia-sozdaniia-fintekh-produkta" 
-                                   target="_blank" 
-                                   rel="noopener noreferrer" 
-                                   class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
-                                    <span>Читать полную статью на Astana Hub</span>
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </section>
 
-            <section id="onepay" class="py-32 bg-gradient-to-b from-gray-50 to-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Header -->
-                    <div class="text-center mb-20">
-                        <h2 class="text-5xl md:text-6xl lg:text-7xl text-gray-900 mb-4">
-                            ONEPAY
-                        </h2>
-                        <p class="text-xl md:text-2xl text-gray-500">
-                            Гибкость, Скорость, Надежность
-                        </p>
+                    <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+                        <div class="mb-8">
+                            <h2 class="text-3xl lg:text-4xl text-gray-900 mb-4">
+                                Увеличивайте конверсию и лояльность: OneClick
+                            </h2>
+                        </div>
+    
+                            <div class="prose prose-lg max-w-none">
+                                <div class="sm:flex gap-2">
+                                    <div>
+                                        <p class="text-gray-700 mb-6 font-bold">
+                                            Что такое платеж OneClick (в один клик)?
+                                        </p>
+                                        
+                                        <p class="text-gray-700 mb-6">
+                                            В современном E-commerce скорость оплаты — это ключ к конверсии. Платеж «в один клик» (OneClick) позволяет покупателю совершить повторную покупку, не вводя заново данные своей банковской карты. Это мгновенно, удобно и значительно снижает число брошенных корзин.
+                                        </p>
+                                        
+                                        <p class="text-gray-700 mb-6 font-bold">
+                                            Как ONEPAY предоставляет OneClick через Глобальные Токены?
+                                        </p>
+                                        
+                                        <p class="text-gray-700 mb-8">
+                                            В основе удобства лежит безопасность. Вместо того чтобы сохранять конфиденциальные данные карты (PAN, срок действия)2, ONEPAY использует процесс токенизации:
+                                        </p>
+                                    </div>
+
+                                    <div class="sm:max-w-[50%]">
+                                        <img
+                                            src="https://astanahub.com/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2025-10-21_%D0%B2_16.50.47.png"
+                                            alt="Команда финтех-продукта"
+                                            class="w-full h-full object-contain"
+                                        />
+                                    </div>
+                                </div>
+    
+                                <div class="mt-8 pt-6 border-t border-gray-200">
+                                    <a href="https://astanahub.com/ru/blog/uvelichivaite-konversiiu-i-loialnost-tekhnologiia-oneclick-s-globalnymi" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer" 
+                                       class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
+                                        <span>Читать полную статью</span>
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                     </div>
-    
-                    <!-- Features Grid -->
-                    <div class="grid md:grid-cols-3 gap-12 lg:gap-16">
-                        <!-- Гибкие модели -->
-                        <div class="group">
-                            <div class="mb-8 flex justify-center">
-                                <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center transition-colors hover:bg-blue-100">
-                                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <h3 class="text-2xl text-gray-900 mb-4 text-center">
-                                Гибкие модели развертывания
-                            </h3>
-                            <p class="text-gray-600 leading-relaxed text-center">
-                                <span class="text-gray-900">On-Premise или SaaS? Выбор за вами!</span> Разверните наше White-Label решение в облаке (SaaS) или установите его на вашей инфраструктуре (On-Premise) для максимального контроля и соответствия внутренним требованиям безопасности.
-                            </p>
-                        </div>
-    
-                        <!-- Сверхбыстрый запуск -->
-                        <div class="group">
-                            <div class="mb-8 flex justify-center">
-                                <div class="w-16 h-16 rounded-full bg-purple-50 flex items-center justify-center transition-colors hover:bg-purple-100">
-                                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <h3 class="text-2xl text-gray-900 mb-4 text-center">
-                                Сверхбыстрый запуск
-                            </h3>
-                            <p class="text-gray-600 leading-relaxed text-center">
-                                <span class="text-gray-900">Готовность от 3 дней!</span> Наша White-Label платформа полностью готова к работе. Благодаря стандартизированному API и подготовленному веб-интерфейсу, мы обеспечиваем запуск вашей платежной системы в течение 3 дней с момента заключения договора. Сосредоточьтесь на бизнесе, а не на долгой интеграции.
-                            </p>
-                        </div>
-    
-                        <!-- Круглосуточная поддержка -->
-                        <div class="group">
-                            <div class="mb-8 flex justify-center">
-                                <div class="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center transition-colors hover:bg-green-100">
-                                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <h3 class="text-2xl text-gray-900 mb-4 text-center">
-                                Круглосуточная поддержка
-                            </h3>
-                            <p class="text-gray-600 leading-relaxed text-center">
-                                <span class="text-gray-900">Поддержка 24/7/365.</span> Наша техническая команда и персональные менеджеры всегда на связи. Мы гарантируем оперативное решение любых вопросов, связанных с эксплуатацией, безопасностью и масштабированием, чтобы ваш платежный бизнес работал без сбоев.
-                            </p>
-                        </div>
-                    </div>
-    
-                    <!-- Divider Line -->
-                    <div class="mt-20 border-t border-gray-200"></div>
                 </div>
             </section>
 
@@ -2544,7 +2457,7 @@
                                 </div>
                                 <div class="card-content">
                                     <p class="text-gray-600">
-                                        info@onepay
+                                        info@ovtech.kz
                                     </p>
                                     <p class="text-sm text-gray-500 mt-1">
                                         Ответим в течение часа
@@ -2676,7 +2589,7 @@
                                                     id="phone"
                                                     type="tel"
                                                     class="form-input"
-                                                    placeholder="+7 (999) 123-45-67"
+                                                    placeholder="+7 (747) 777-77-77"
                                                     required
                                                 />
                                             </div>
@@ -2759,10 +2672,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <!-- Company Info -->
                     <div class="col-span-1 md:col-span-2">
-                        <div class="text-2xl mb-4">
-                            <span class="text-white">ONE</span>
-                            <span class="text-blue-400 ml-2">PAY</span>
-                        </div>
+                        <img src="./images/logo_white.png" alt="" class="w-[120px] mb-6">
                         <p class="text-gray-300 mb-6 max-w-md">
                             Ваш надежный партнер в области платежных технологий.
                             Мы предоставляем профессиональные White-Label
@@ -2800,7 +2710,7 @@
                                         d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                     ></path>
                                 </svg>
-                                <span>info@onepay.com</span>
+                                <span>info@ovtech.kz.com</span>
                             </div>
                             <div class="flex items-center text-gray-300">
                                 <svg
@@ -3055,7 +2965,7 @@
                             id="modalPhone"
                             type="tel"
                             class="form-input"
-                            placeholder="+7 (999) 123-45-67"
+                            placeholder="+7 (747) 777-77-77"
                             required
                         />
                     </div>
